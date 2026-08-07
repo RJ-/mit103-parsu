@@ -4,19 +4,19 @@
 First Semester, AY 2026–2027 · 3 units (1 unit lab) · Blended delivery  
 Syllabus reference: PSU-SYL-MIT101, Rev. 03
 
-Instructor: **Shane C. Briones** · shane.briones@parsu.edu.ph
+Instructor: **Rowell John B. Artiaga** · john.artiaga@parsu.edu.ph
 
 ---
 
 ## Start here
 
-| If you want to… | Go to |
-| --- | --- |
-| See what is happening this week | [Weekly schedule](#weekly-schedule) |
-| Find a reading or a tool | [Resource list](resources.md) |
+| If you want to…                        | Go to                                  |
+| -------------------------------------- | -------------------------------------- |
+| See what is happening this week        | [Weekly schedule](#weekly-schedule)    |
+| Find a reading or a tool               | [Resource list](resources.md)          |
 | Check what is due and how it is marked | [Deliverables](deliverables/README.md) |
-| Get a template to fill in | [Templates](templates/README.md) |
-| Submit work | [How to contribute](CONTRIBUTING.md) |
+| Get a template to fill in              | [Templates](templates/README.md)       |
+| Submit work                            | [How to contribute](CONTRIBUTING.md)   |
 
 > **Google Classroom is the official channel.** Announcements, deadlines, grades
 > and the record of submission live there. This site holds the stable course
@@ -49,37 +49,37 @@ At the end of the course you should be able to:
 
 ## Weekly schedule
 
-| Wk | Topic | Portfolio output |
-| --- | --- | --- |
-| [01](weeks/week-01.md) | Course orientation and institutional alignment | — |
-| [02](weeks/week-02.md) | Systems, roles and development methodologies | Problem domain |
-| [03](weeks/week-03.md) | Understanding and modeling organizational systems | System Proposal |
-| [04](weeks/week-04.md) | Information gathering: interactive methods | System Proposal |
-| [05](weeks/week-05.md) | Information gathering: unobtrusive methods | **System Proposal due** |
-| [06](weeks/week-06.md) | Agile modeling and prototyping | **System Prototype due** |
-| [07](weeks/week-07.md) | Using data flow diagrams | **System Design due** |
-| [08](weeks/week-08.md) | Analyzing systems using data dictionaries | **Database Design due** |
-| [09](weeks/week-09.md) | **Midterm examination** | — |
-| [10](weeks/week-10.md) | Process specifications, structured decisions, output design | System Logical Design |
-| [11](weeks/week-11.md) | Display outputs, dashboards, web output | Physical Design |
-| [12](weeks/week-12.md) | Input design: functional and engaging displays | Physical Design |
-| [13](weeks/week-13.md) | Web, intranet and tablet input design | **Physical Design due** |
-| [14](weeks/week-14.md) | Introduction to human-computer interaction | Interface Design |
-| [15](weeks/week-15.md) | Types of user interfaces and onscreen dialog | Interface Design |
-| [16](weeks/week-16.md) | Data entry procedures and effective coding | Interface Design |
-| [17](weeks/week-17.md) | Data validation, verification and data quality | **Interface Design due** |
-| [18](weeks/week-18.md) | Quality assurance, implementation, SOA and cloud | **Final proposal + Final exam** |
+| Wk                     | Topic                                                       | Portfolio output                |
+| ---------------------- | ----------------------------------------------------------- | ------------------------------- |
+| [01](weeks/week-01.md) | Course orientation and institutional alignment              | —                               |
+| [02](weeks/week-02.md) | Systems, roles and development methodologies                | Problem domain                  |
+| [03](weeks/week-03.md) | Understanding and modeling organizational systems           | System Proposal                 |
+| [04](weeks/week-04.md) | Information gathering: interactive methods                  | System Proposal                 |
+| [05](weeks/week-05.md) | Information gathering: unobtrusive methods                  | **System Proposal due**         |
+| [06](weeks/week-06.md) | Agile modeling and prototyping                              | **System Prototype due**        |
+| [07](weeks/week-07.md) | Using data flow diagrams                                    | **System Design due**           |
+| [08](weeks/week-08.md) | Analyzing systems using data dictionaries                   | **Database Design due**         |
+| [09](weeks/week-09.md) | **Midterm examination**                                     | —                               |
+| [10](weeks/week-10.md) | Process specifications, structured decisions, output design | System Logical Design           |
+| [11](weeks/week-11.md) | Display outputs, dashboards, web output                     | Physical Design                 |
+| [12](weeks/week-12.md) | Input design: functional and engaging displays              | Physical Design                 |
+| [13](weeks/week-13.md) | Web, intranet and tablet input design                       | **Physical Design due**         |
+| [14](weeks/week-14.md) | Introduction to human-computer interaction                  | Interface Design                |
+| [15](weeks/week-15.md) | Types of user interfaces and onscreen dialog                | Interface Design                |
+| [16](weeks/week-16.md) | Data entry procedures and effective coding                  | Interface Design                |
+| [17](weeks/week-17.md) | Data validation, verification and data quality              | **Interface Design due**        |
+| [18](weeks/week-18.md) | Quality assurance, implementation, SOA and cloud            | **Final proposal + Final exam** |
 
 ---
 
 ## Grading
 
-| Component | Weight |
-| --- | --- |
-| Laboratory / performance skills, outputs, projects | 40% |
-| Midterm / Final examination | 30% |
-| Class standing (quizzes and recitation) | 20% |
-| Deportment / attendance | 10% |
+| Component                                          | Weight |
+| -------------------------------------------------- | ------ |
+| Laboratory / performance skills, outputs, projects | 40%    |
+| Midterm / Final examination                        | 30%    |
+| Class standing (quizzes and recitation)            | 20%    |
+| Deportment / attendance                            | 10%    |
 
 `FINAL GRADE = (final term grade × 50%) + (midterm grade × 50%)`
 
@@ -89,7 +89,7 @@ At the end of the course you should be able to:
 
 Everything here is plain Markdown under version control. That is deliberate — it
 is the same collaborative tooling the course assesses under program outcome
-**f.2** (*utilize collaborative development tools effectively*), and the
+**f.2** (_utilize collaborative development tools effectively_), and the
 repository you build over the semester is a portfolio artefact under **e.3**.
 
 You do not need Git to read this site. You do need it to submit.

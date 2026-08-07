@@ -7,7 +7,7 @@
 :root {
   --bg: #ffffff;
   --text: #1f2933;
-  --gold: #8b6b1f;
+  --gold: #d4af37;
 
   --ink: var(--text);
   --ink-soft: #1f293380;
@@ -173,7 +173,7 @@ body {
 .badge-free,
 .badge-oss {
   color: var(--gold);
-  background: #8b6b1f12;
+  background: #d4af371a;
 }
 
 /* --- Blockquotes: used for scheduling notes and guidance ------------------ */

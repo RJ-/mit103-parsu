@@ -1,0 +1,45 @@
+- [Course home](README.md)
+- [Resource list](resources.md)
+
+- **Weekly schedule**
+  - [01 · Orientation](weeks/week-01.md)
+  - [02 · Systems and methodologies](weeks/week-02.md)
+  - [03 · Organizational systems](weeks/week-03.md)
+  - [04 · Interactive elicitation](weeks/week-04.md)
+  - [05 · Unobtrusive methods](weeks/week-05.md)
+  - [06 · Agile and prototyping](weeks/week-06.md)
+  - [07 · Data flow diagrams](weeks/week-07.md)
+  - [08 · Data dictionaries](weeks/week-08.md)
+  - [09 · Midterm examination](weeks/week-09.md)
+  - [10 · Process specifications](weeks/week-10.md)
+  - [11 · Output and dashboards](weeks/week-11.md)
+  - [12 · Input design](weeks/week-12.md)
+  - [13 · Cross-platform input](weeks/week-13.md)
+  - [14 · Human-computer interaction](weeks/week-14.md)
+  - [15 · Interfaces and dialog](weeks/week-15.md)
+  - [16 · Data entry and coding](weeks/week-16.md)
+  - [17 · Validation and data quality](weeks/week-17.md)
+  - [18 · QA and implementation](weeks/week-18.md)
+
+- **Deliverables**
+  - [Overview and grading](deliverables/README.md)
+  - [1 · System Proposal](deliverables/01-system-proposal.md)
+  - [2 · System Prototype](deliverables/02-system-prototype.md)
+  - [3 · System Design](deliverables/03-system-design.md)
+  - [4 · Database Design](deliverables/04-database-design.md)
+  - [5 · Physical Design](deliverables/05-physical-design.md)
+  - [6 · Interface Design](deliverables/06-interface-design.md)
+  - [7 · Final Proposal](deliverables/07-final-proposal.md)
+
+- **Templates**
+  - [All templates](templates/README.md)
+  - [Interview guide](templates/interview-guide.md)
+  - [SRS outline](templates/srs-outline.md)
+  - [Data dictionary](templates/data-dictionary.md)
+  - [Process specification](templates/process-specification.md)
+  - [Heuristic evaluation](templates/heuristic-evaluation.md)
+
+- **Course admin**
+  - [How to submit](CONTRIBUTING.md)
+  - [Licensing notes](LICENSING.md)
+  - [Instructor setup](SETUP.md)

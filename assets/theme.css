@@ -1,0 +1,247 @@
+/* ==========================================================================
+   MIT 103 — course site theme
+   Palette derives from the PSU letterhead: navy ink on warm paper, with the
+   licence badge system carrying the only saturated colour on the page.
+   ========================================================================== */
+
+:root {
+  --ink:        #0E1B2A;
+  --ink-soft:   #40506380;
+  --paper:      #FCFBF8;
+  --paper-sunk: #F4F2EC;
+  --rule:       #DEDACE;
+  --steel:      #2E5C7E;
+  --steel-dark: #1D4260;
+
+  --moss:  #3F6B4A;   /* OPEN */
+  --clay:  #9A5B2E;   /* FREE */
+  --slate: #46566B;   /* OSS  */
+
+  --display: 'Newsreader', Georgia, serif;
+  --body:    'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono:    'IBM Plex Mono', ui-monospace, Menlo, monospace;
+
+  /* docsify-themeable variables */
+  --base-font-family: var(--body);
+  --base-font-size: 16px;
+  --base-line-height: 1.65;
+  --base-color: var(--ink);
+  --theme-color: var(--steel);
+  --link-color: var(--steel);
+  --link-color--hover: var(--steel-dark);
+  --link-text-decoration: underline;
+  --link-text-decoration-color: var(--rule);
+
+  --content-max-width: 46rem;
+  --sidebar-width: 17rem;
+  --sidebar-background: var(--paper-sunk);
+  --sidebar-border-color: var(--rule);
+  --sidebar-nav-link-color: var(--ink);
+  --sidebar-nav-link-color--active: var(--steel-dark);
+  --sidebar-nav-link-font-weight--active: 600;
+  --sidebar-nav-link-border-color--active: var(--steel);
+  --sidebar-nav-pagelink-transform: none;
+
+  --heading-font-family: var(--display);
+  --heading-font-weight: 600;
+  --heading-h1-font-size: 2.1rem;
+  --heading-h2-font-size: 1.45rem;
+  --heading-h3-font-size: 1.15rem;
+
+  --code-font-family: var(--mono);
+  --code-font-size: 0.85em;
+  --code-theme-background: var(--paper-sunk);
+
+  --table-cell-border-color: var(--rule);
+  --table-row-odd-background: #F8F6F1;
+
+  --blockquote-border-color: var(--steel);
+  --blockquote-font-style: normal;
+  --blockquote-background: #F2F5F7;
+}
+
+body { background: var(--paper); }
+
+/* --- Typography ---------------------------------------------------------- */
+
+.markdown-section h1 {
+  letter-spacing: -0.012em;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.markdown-section h2 {
+  margin-top: 2.6rem;
+  letter-spacing: -0.006em;
+}
+
+/* Week pages get a numbered eyebrow feel: the schedule is a real sequence,
+   so numbering carries information rather than decorating. */
+.markdown-section h3 {
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--steel-dark);
+}
+
+.markdown-section strong { font-weight: 700; }
+.markdown-section em { font-style: italic; }
+
+/* --- Tables: the workhorse element on this site -------------------------- */
+
+.markdown-section table {
+  display: table;
+  width: 100%;
+  font-size: 0.92rem;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.markdown-section th {
+  font-family: var(--body);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: transparent;
+  border-bottom: 2px solid var(--ink);
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.markdown-section td { vertical-align: top; }
+
+/* Rubric tables run wide — let them scroll rather than crush the columns. */
+.markdown-section > table { display: block; overflow-x: auto; }
+
+/* --- Licence badges: the signature element ------------------------------- */
+
+.badge {
+  display: inline-block;
+  font-family: var(--body);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  padding: 0.16em 0.5em 0.14em;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+  vertical-align: 0.08em;
+}
+
+.badge-open  { color: var(--moss);  background: #3F6B4A12; }
+.badge-free  { color: var(--clay);  background: #9A5B2E12; }
+.badge-oss   { color: var(--slate); background: #46566B12; }
+
+/* --- Blockquotes: used for scheduling notes and guidance ------------------ */
+
+.markdown-section blockquote {
+  border-left: 3px solid var(--steel);
+  background: #F2F5F7;
+  padding: 0.9rem 1.1rem;
+  margin: 1.5rem 0;
+  font-size: 0.94rem;
+}
+
+.markdown-section blockquote p:last-child { margin-bottom: 0; }
+
+/* --- Sidebar ------------------------------------------------------------- */
+
+.sidebar {
+  font-size: 0.88rem;
+  border-right: 1px solid var(--rule);
+}
+
+.sidebar .app-name-link {
+  font-family: var(--display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.sidebar-nav > ul > li > p,
+.sidebar-nav > ul > li > strong {
+  font-family: var(--body);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.55;
+  margin-top: 1.5rem;
+}
+
+/* --- Search -------------------------------------------------------------- */
+
+.search input {
+  font-family: var(--body);
+  font-size: 0.85rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.5rem 0.6rem;
+}
+
+.search input:focus-visible {
+  outline: 2px solid var(--steel);
+  outline-offset: 1px;
+}
+
+/* --- Accessibility floor ------------------------------------------------- */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--steel);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+@media print {
+  .sidebar, .sidebar-toggle, .search { display: none !important; }
+  .content { left: 0 !important; }
+  .markdown-section { max-width: 100%; }
+  a { text-decoration: underline; }
+}
+
+/* --- Mobile -------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  :root { --base-font-size: 15px; --heading-h1-font-size: 1.7rem; }
+  .markdown-section table { font-size: 0.84rem; }
+}
+
+/* --- Dark mode: respect the system, keep the badge system legible -------- */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink:        #E8E6DF;
+    --paper:      #10161D;
+    --paper-sunk: #182029;
+    --rule:       #2C3742;
+    --steel:      #7FB3D5;
+    --steel-dark: #A8CDE5;
+    --moss:  #86C098;
+    --clay:  #D9A278;
+    --slate: #9DB0C4;
+
+    --base-color: var(--ink);
+    --sidebar-background: var(--paper-sunk);
+    --table-row-odd-background: #151C24;
+    --code-theme-background: var(--paper-sunk);
+    --blockquote-background: #172029;
+  }
+  body { background: var(--paper); }
+  .markdown-section blockquote { background: #172029; }
+  .badge-open { background: #86C09818; }
+  .badge-free { background: #D9A27818; }
+  .badge-oss  { background: #9DB0C418; }
+}

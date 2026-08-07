@@ -2,7 +2,7 @@
 
 **Partido State University · College of Engineering and Computational Sciences**  
 First Semester, AY 2026–2027 · 3 units (1 unit lab) · Blended delivery  
-Syllabus reference: PSU-SYL-MIT101, Rev. 03
+Syllabus reference: PSU-SYL-MIT103, Rev. 03
 
 Instructor: **Rowell John B. Artiaga** · john.artiaga@parsu.edu.ph
 

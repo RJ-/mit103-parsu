@@ -5,26 +5,26 @@
    ========================================================================== */
 
 :root {
-  --ink:        #0E1B2A;
-  --ink-soft:   #40506380;
-  --paper:      #FCFBF8;
-  --paper-sunk: #F4F2EC;
-  --rule:       #DEDACE;
-  --steel:      #2E5C7E;
-  --steel-dark: #1D4260;
+  --bg: #ffffff;
+  --text: #1f2933;
+  --gold: #8b6b1f;
 
-  --moss:  #3F6B4A;   /* OPEN */
-  --clay:  #9A5B2E;   /* FREE */
-  --slate: #46566B;   /* OSS  */
+  --ink: var(--text);
+  --ink-soft: #1f293380;
+  --paper: var(--bg);
+  --paper-sunk: var(--bg);
+  --rule: #1f293333;
+  --steel: var(--gold);
+  --steel-dark: var(--gold);
 
-  --display: 'Newsreader', Georgia, serif;
-  --body:    'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --mono:    'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --display: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 
   /* docsify-themeable variables */
   --base-font-family: var(--body);
   --base-font-size: 16px;
-  --base-line-height: 1.65;
+  --base-line-height: 1.72;
   --base-color: var(--ink);
   --theme-color: var(--steel);
   --link-color: var(--steel);
@@ -32,7 +32,7 @@
   --link-text-decoration: underline;
   --link-text-decoration-color: var(--rule);
 
-  --content-max-width: 46rem;
+  --content-max-width: 48rem;
   --sidebar-width: 17rem;
   --sidebar-background: var(--paper-sunk);
   --sidebar-border-color: var(--rule);
@@ -43,36 +43,59 @@
   --sidebar-nav-pagelink-transform: none;
 
   --heading-font-family: var(--display);
-  --heading-font-weight: 600;
-  --heading-h1-font-size: 2.1rem;
-  --heading-h2-font-size: 1.45rem;
-  --heading-h3-font-size: 1.15rem;
+  --heading-font-weight: 650;
+  --heading-h1-font-size: 2.2rem;
+  --heading-h2-font-size: 1.55rem;
+  --heading-h3-font-size: 1.05rem;
 
   --code-font-family: var(--mono);
   --code-font-size: 0.85em;
   --code-theme-background: var(--paper-sunk);
 
   --table-cell-border-color: var(--rule);
-  --table-row-odd-background: #F8F6F1;
+  --table-row-odd-background: #1f293308;
 
   --blockquote-border-color: var(--steel);
   --blockquote-font-style: normal;
-  --blockquote-background: #F2F5F7;
+  --blockquote-background: #1f293308;
 }
 
-body { background: var(--paper); }
+body {
+  background: var(--paper);
+}
+
+.markdown-section {
+  font-size: 1rem;
+  line-height: 1.72;
+  letter-spacing: 0.002em;
+}
+
+.markdown-section p,
+.markdown-section li {
+  line-height: 1.72;
+}
+
+.markdown-section p,
+.markdown-section ul,
+.markdown-section ol {
+  margin: 0 0 1rem;
+}
 
 /* --- Typography ---------------------------------------------------------- */
 
 .markdown-section h1 {
+  font-weight: 700;
+  line-height: 1.2;
   letter-spacing: -0.012em;
-  border-bottom: 2px solid var(--ink);
-  padding-bottom: 0.4rem;
-  margin-bottom: 1.4rem;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.45rem;
+  margin: 0 0 1.35rem;
 }
 
 .markdown-section h2 {
-  margin-top: 2.6rem;
+  font-weight: 650;
+  line-height: 1.25;
+  margin: 2.4rem 0 1rem;
   letter-spacing: -0.006em;
 }
 
@@ -80,15 +103,20 @@ body { background: var(--paper); }
    so numbering carries information rather than decorating. */
 .markdown-section h3 {
   font-family: var(--body);
-  font-weight: 700;
+  font-weight: 650;
   font-size: 0.82rem;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--steel-dark);
+  margin: 1.8rem 0 0.7rem;
 }
 
-.markdown-section strong { font-weight: 700; }
-.markdown-section em { font-style: italic; }
+.markdown-section strong {
+  font-weight: 700;
+}
+.markdown-section em {
+  font-style: italic;
+}
 
 /* --- Tables: the workhorse element on this site -------------------------- */
 
@@ -97,7 +125,7 @@ body { background: var(--paper); }
   width: 100%;
   font-size: 0.92rem;
   border-collapse: collapse;
-  margin: 1.5rem 0;
+  margin: 1.25rem 0 1.75rem;
 }
 
 .markdown-section th {
@@ -111,12 +139,19 @@ body { background: var(--paper); }
   border-bottom: 2px solid var(--ink);
   text-align: left;
   vertical-align: bottom;
+  padding: 0.65rem 0.7rem;
 }
 
-.markdown-section td { vertical-align: top; }
+.markdown-section td {
+  vertical-align: top;
+  padding: 0.65rem 0.7rem;
+}
 
 /* Rubric tables run wide — let them scroll rather than crush the columns. */
-.markdown-section > table { display: block; overflow-x: auto; }
+.markdown-section > table {
+  display: block;
+  overflow-x: auto;
+}
 
 /* --- Licence badges: the signature element ------------------------------- */
 
@@ -134,26 +169,32 @@ body { background: var(--paper); }
   vertical-align: 0.08em;
 }
 
-.badge-open  { color: var(--moss);  background: #3F6B4A12; }
-.badge-free  { color: var(--clay);  background: #9A5B2E12; }
-.badge-oss   { color: var(--slate); background: #46566B12; }
+.badge-open,
+.badge-free,
+.badge-oss {
+  color: var(--gold);
+  background: #8b6b1f12;
+}
 
 /* --- Blockquotes: used for scheduling notes and guidance ------------------ */
 
 .markdown-section blockquote {
   border-left: 3px solid var(--steel);
-  background: #F2F5F7;
-  padding: 0.9rem 1.1rem;
-  margin: 1.5rem 0;
+  background: var(--blockquote-background);
+  padding: 1rem 1.1rem;
+  margin: 1.4rem 0 1.6rem;
   font-size: 0.94rem;
+  line-height: 1.68;
 }
 
-.markdown-section blockquote p:last-child { margin-bottom: 0; }
+.markdown-section blockquote p:last-child {
+  margin-bottom: 0;
+}
 
 /* --- Sidebar ------------------------------------------------------------- */
 
 .sidebar {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   border-right: 1px solid var(--rule);
 }
 
@@ -180,11 +221,11 @@ body { background: var(--paper); }
 
 .search input {
   font-family: var(--body);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   background: var(--paper);
   border: 1px solid var(--rule);
   border-radius: 3px;
-  padding: 0.5rem 0.6rem;
+  padding: 0.55rem 0.65rem;
 }
 
 .search input:focus-visible {
@@ -202,46 +243,41 @@ button:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { animation: none !important; transition: none !important; }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 @media print {
-  .sidebar, .sidebar-toggle, .search { display: none !important; }
-  .content { left: 0 !important; }
-  .markdown-section { max-width: 100%; }
-  a { text-decoration: underline; }
+  .sidebar,
+  .sidebar-toggle,
+  .search {
+    display: none !important;
+  }
+  .content {
+    left: 0 !important;
+  }
+  .markdown-section {
+    max-width: 100%;
+  }
+  a {
+    text-decoration: underline;
+  }
 }
 
 /* --- Mobile -------------------------------------------------------------- */
 
 @media (max-width: 768px) {
-  :root { --base-font-size: 15px; --heading-h1-font-size: 1.7rem; }
-  .markdown-section table { font-size: 0.84rem; }
-}
-
-/* --- Dark mode: respect the system, keep the badge system legible -------- */
-
-@media (prefers-color-scheme: dark) {
   :root {
-    --ink:        #E8E6DF;
-    --paper:      #10161D;
-    --paper-sunk: #182029;
-    --rule:       #2C3742;
-    --steel:      #7FB3D5;
-    --steel-dark: #A8CDE5;
-    --moss:  #86C098;
-    --clay:  #D9A278;
-    --slate: #9DB0C4;
-
-    --base-color: var(--ink);
-    --sidebar-background: var(--paper-sunk);
-    --table-row-odd-background: #151C24;
-    --code-theme-background: var(--paper-sunk);
-    --blockquote-background: #172029;
+    --base-font-size: 15px;
+    --heading-h1-font-size: 1.9rem;
+    --heading-h2-font-size: 1.35rem;
   }
-  body { background: var(--paper); }
-  .markdown-section blockquote { background: #172029; }
-  .badge-open { background: #86C09818; }
-  .badge-free { background: #D9A27818; }
-  .badge-oss  { background: #9DB0C418; }
+  .markdown-section {
+    line-height: 1.68;
+  }
+  .markdown-section table {
+    font-size: 0.84rem;
+  }
 }

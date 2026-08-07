@@ -7,7 +7,8 @@
 :root {
   --bg: #ffffff;
   --text: #1f2933;
-  --gold: #ffc300;
+  --gold: #ffc320;
+  --gold-font-weight: 700;
 
   --ink: var(--text);
   --ink-soft: #1f293380;
@@ -104,7 +105,7 @@ body {
 .markdown-section h3 {
   font-family: var(--body);
   font-weight: 650;
-  font-size: 0.82rem;
+  font-size: 1rem;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--steel-dark);
@@ -116,6 +117,17 @@ body {
 }
 .markdown-section em {
   font-style: italic;
+}
+
+/* CSS cannot target by variable value, so bold the known gold-highlighted text selectors. */
+.markdown-section a,
+.sidebar-nav a,
+.sidebar-nav a.section-link,
+.markdown-section h3,
+.badge-open,
+.badge-free,
+.badge-oss {
+  font-weight: var(--gold-font-weight);
 }
 
 /* --- Tables: the workhorse element on this site -------------------------- */
@@ -200,7 +212,7 @@ body {
 
 .sidebar .app-name-link {
   font-family: var(--display);
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: -0.01em;
 }
